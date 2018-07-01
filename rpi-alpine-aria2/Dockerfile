@@ -4,7 +4,7 @@ MAINTAINER Yangxuan <yangxuan8282@gmail.com>
 ENV ARIA2_VERSION=1.34.0
 ENV ARIA2_URL=https://github.com/q3aql/aria2-static-builds/releases/download/v${ARIA2_VERSION}/aria2-${ARIA2_VERSION}-linux-gnu-arm-rbpi-build1.tar.bz2
 
-RUN apk --update --no-cache add bash curl tar 
+RUN apk --update add bash curl tar
 RUN curl -sSL $ARIA2_URL | tar xj --strip 1 -C /usr/local/bin/ aria2-${ARIA2_VERSION}-linux-gnu-arm-rbpi-build1/aria2c 
 RUN adduser -D aria2 
 RUN mkdir -p /etc/aria2 
