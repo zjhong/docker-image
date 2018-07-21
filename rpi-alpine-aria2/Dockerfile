@@ -1,4 +1,4 @@
-FROM pipill/armhf-alpine
+FROM arm32v6/alpine:3.8
 MAINTAINER Yangxuan <yangxuan8282@gmail.com>
 
 ENV ARIA2_VERSION=1.34.0
