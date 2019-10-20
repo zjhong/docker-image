@@ -1,7 +1,7 @@
 FROM arm32v6/alpine:3.8
 MAINTAINER Yangxuan <yangxuan8282@gmail.com>
 
-ENV ARIA2_VERSION=1.34.0
+ENV ARIA2_VERSION=1.35.0
 ENV ARIA2_URL=https://github.com/q3aql/aria2-static-builds/releases/download/v${ARIA2_VERSION}/aria2-${ARIA2_VERSION}-linux-gnu-arm-rbpi-build1.tar.bz2
 
 RUN apk add bash curl tar
