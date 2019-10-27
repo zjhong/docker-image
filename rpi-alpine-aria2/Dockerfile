@@ -1,4 +1,4 @@
-FROM arm32v6/alpine:3.8
+FROM arm32v7/alpine:3.10
 MAINTAINER Yangxuan <yangxuan8282@gmail.com>
 
 ENV ARIA2_VERSION=1.35.0
